@@ -10,6 +10,7 @@ public class ExchangeTransaction {
     private Quotation quotation;
     private Date date;
     private Double amount;
+    private TransactionType type;
 
     public String getId() {
         return id;
@@ -49,5 +50,13 @@ public class ExchangeTransaction {
 
     public void setAmount(Double amount) {
         this.amount = amount;
+    }
+
+    public TransactionType getType() {
+        return type;
+    }
+
+    public void setType(TransactionType type) {
+        this.type = type;
     }
 }
